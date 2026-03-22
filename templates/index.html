@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row align-items-center justify-content-center flex-grow-1 hero-section text-center my-4">
+    <div class="col-md-8 hero-content animate-fade-in">
+        <h1 class="display-3 fw-bold text-white mb-4">Digital Document Archive</h1>
+        <p class="lead text-light mb-5 fs-4">Securely store, organize, and retrieve your company's historical records with ease.</p>
+        
+        <div class="d-flex justify-content-center gap-3">
+            <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg px-5 py-3 rounded-pill fw-semibold shadow">
+                <i class="bi bi-box-arrow-in-right me-2"></i>Login to Access
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-5 animate-fade-in" style="animation-delay: 0.2s;">
+    <div class="col-md-4 mb-4">
+        <div class="card glass-panel h-100 p-4 border-0 text-center">
+            <div class="mb-3 text-primary">
+                <i class="bi bi-shield-lock display-4"></i>
+            </div>
+            <h3 class="h4 mb-3">Secure Storage</h3>
+            <p class="text-secondary">Enterprise-grade security for your sensitive historical documents and records.</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card glass-panel h-100 p-4 border-0 text-center">
+            <div class="mb-3 text-info">
+                <i class="bi bi-search display-4"></i>
+            </div>
+            <h3 class="h4 mb-3">Quick Retrieval</h3>
+            <p class="text-secondary">Advanced search capabilities to find exactly what you need in seconds.</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card glass-panel h-100 p-4 border-0 text-center">
+            <div class="mb-3 text-success">
+                <i class="bi bi-diagram-3 display-4"></i>
+            </div>
+            <h3 class="h4 mb-3">Organized Structure</h3>
+            <p class="text-secondary">Categorize by department, year, and custom tags for logical navigation.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

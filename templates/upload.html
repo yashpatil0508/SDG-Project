@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center animate-fade-in">
+    <div class="col-lg-8">
+        <div class="d-flex justify-content-between align-items-center mb-4 mt-3">
+            <h2 class="fw-bold"><i class="bi bi-cloud-arrow-up text-primary me-2"></i>Upload Document</h2>
+            <a href="{{ url_for('dashboard') }}" class="btn btn-outline-secondary rounded-pill shadow-sm">
+                <i class="bi bi-arrow-left me-2"></i>Back to Dashboard
+            </a>
+        </div>
+
+        <div class="card glass-panel border-0 shadow-lg">
+            <div class="card-body p-4 p-md-5">
+                <form method="POST" action="{{ url_for('upload') }}" enctype="multipart/form-data">
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-12">
+                            <label for="title" class="form-label ms-1">Document Title <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control form-control-lg border-secondary" id="title" name="title" required placeholder="Enter a descriptive title">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label for="department" class="form-label ms-1">Department <span class="text-danger">*</span></label>
+                            <select class="form-select border-secondary form-select-lg" id="department" name="department_id" required>
+                                <option value="" selected disabled>Select Department</option>
+                                {% for dept in departments %}
+                                    <option value="{{ dept.id }}">{{ dept.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label for="category" class="form-label ms-1">Category <span class="text-danger">*</span></label>
+                            <select class="form-select border-secondary form-select-lg" id="category" name="category" required>
+                                <option value="" selected disabled>Select Category</option>
+                                <option value="Financial">Financial</option>
+                                <option value="Legal">Legal</option>
+                                <option value="HR">Human Resources</option>
+                                <option value="Operations">Operations</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="year" class="form-label ms-1">Document Year <span class="text-danger">*</span></label>
+                            <input type="number" class="form-control border-secondary form-control-lg" id="year" name="year" min="1900" max="2100" required placeholder="e.g. 2021">
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label for="keywords" class="form-label ms-1">Keywords (Comma separated)</label>
+                            <input type="text" class="form-control border-secondary form-control-lg" id="keywords" name="keywords" placeholder="invoice, audit, q3...">
+                        </div>
+
+                        <div class="col-12 mt-4">
+                            <label for="file" class="form-label ms-1">Select File <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-dark border-secondary text-secondary"><i class="bi bi-file-earmark-arrow-up"></i></span>
+                                <input type="file" class="form-control form-control-lg border-secondary" id="file" name="file" required accept=".pdf,.doc,.docx,.xls,.xlsx,.png,.jpg,.jpeg">
+                            </div>
+                            <div class="form-text text-muted mt-2 ms-1">
+                                Supported formats: PDF, DOCX, XLSX, Images. Max size: 20MB.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr class="border-secondary my-4">
+                    
+                    <div class="d-flex justify-content-end gap-3">
+                        <button type="reset" class="btn btn-outline-secondary rounded-pill px-4">Clear Form</button>
+                        <button type="submit" class="btn btn-primary rounded-pill px-5 fw-semibold shadow-sm">
+                            <i class="bi bi-upload me-2"></i>Upload File
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

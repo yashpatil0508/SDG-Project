@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="animate-fade-in">
+    <div style="margin-bottom: 2rem;">
+        <a href="{{ url_for('employees') }}" style="color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: color 0.2s;">
+            <i class="fa-solid fa-arrow-left"></i> Back to Directory
+        </a>
+    </div>
+
+    <div class="glass-panel" style="padding: 3rem 2rem; margin-bottom: 2rem; position: relative; overflow: hidden;">
+        <!-- Background decorative element -->
+        <div style="position: absolute; top: 0; right: 0; width: 300px; height: 300px; background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%); opacity: 0.1; transform: translate(30%, -30%); border-radius: 50%;"></div>
+
+        <div class="profile-header">
+            <div class="profile-avatar-large">
+                {{ employee.first_name[0] }}{{ employee.last_name[0] }}
+            </div>
+            <div class="profile-info" style="flex: 1;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <div>
+                        <h1>{{ employee.first_name }} {{ employee.last_name }}</h1>
+                        <p><i class="fa-solid fa-envelope" style="margin-right: 0.5rem;"></i>{{ employee.email }}</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <span class="badge {{ employee.status|lower|replace(' ', '-') }}" style="font-size: 1rem; padding: 0.5rem 1rem; margin-bottom: 0.5rem; display: inline-block;">{{ employee.status }}</span>
+                        <div style="color: var(--text-muted); font-family: monospace;">ID: {{ employee.employee_id }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="details-grid">
+        <div class="detail-card glass-panel">
+            <h3><i class="fa-solid fa-building" style="margin-right: 0.5rem;"></i> Professional Information</h3>
+            <div class="detail-row">
+                <span>Department</span>
+                <span style="font-weight: 500;">{{ employee.department.name }}</span>
+            </div>
+            <div class="detail-row">
+                <span>Role</span>
+                <span><span class="badge {{ employee.role|lower }}">{{ employee.role }}</span></span>
+            </div>
+            <div class="detail-row">
+                <span>Join Date</span>
+                <span style="font-weight: 500;">{{ employee.join_date.strftime('%B %d, %Y') }}</span>
+            </div>
+        </div>
+
+        {% if show_sensitive %}
+        <div class="detail-card glass-panel" style="border-left: 3px solid var(--accent-color);">
+            <h3><i class="fa-solid fa-lock" style="margin-right: 0.5rem;"></i> Confidential Information <span class="badge" style="background: rgba(255,255,255,0.1); float: right; font-size: 0.6rem;">Admin/Manager Only</span></h3>
+            <div class="detail-row">
+                <span>Annual Salary</span>
+                <span style="font-weight: 600; font-family: monospace;">${{ "{:,.2f}".format(employee.salary) }}</span>
+            </div>
+            <div class="detail-row">
+                <span>Performance Score</span>
+                {% if employee.performance_score %}
+                    <span style="font-weight: 600; color: {% if employee.performance_score >= 4 %}var(--secondary-color){% elif employee.performance_score < 3 %}var(--danger-color){% else %}white{% endif %};">{{ employee.performance_score }} / 5.0</span>
+                {% else %}
+                    <span style="font-weight: 600; color: var(--text-muted);">Not Rated</span>
+                {% endif %}
+            </div>
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--glass-border);">
+                <a href="{{ url_for('add_payment', id=employee.id) }}" class="btn" style="width: 100%; justify-content: center;">
+                    <i class="fa-solid fa-plus-circle"></i> Record Payment
+                </a>
+            </div>
+        </div>
+        {% else %}
+        <div class="detail-card glass-panel" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; opacity: 0.7;">
+            <i class="fa-solid fa-lock" style="font-size: 2rem; color: var(--text-muted); margin-bottom: 1rem;"></i>
+            <p style="color: var(--text-muted); max-width: 200px;">Confidential information is restricted to Managers and Admins.</p>
+        </div>
+        {% endif %}
+    </div>
+
+    {% if show_sensitive %}
+    <div class="glass-panel animate-fade-in" style="margin-top: 2rem; padding: 1.5rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+            <h2 style="margin: 0; font-size: 1.25rem;"><i class="fa-solid fa-money-check-dollar" style="margin-right: 0.5rem;"></i> Recent Payments</h2>
+            <a href="{{ url_for('payments', q=employee.employee_id) }}" class="btn btn-secondary" style="font-size: 0.8rem;">View All Records in Payroll</a>
+        </div>
+        
+        {% if payments %}
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for payment in payments %}
+                    <tr>
+                        <td>{{ payment.payment_date.strftime('%b %d, %Y') }}</td>
+                        <td style="color: var(--text-muted);">{{ payment.description }}</td>
+                        <td><span class="badge active">{{ payment.status }}</span></td>
+                        <td style="font-family: monospace; font-weight: 600;">${{ "{:,.2f}".format(payment.amount) }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <div style="text-align: center; padding: 2rem; color: var(--text-muted);">
+            No payment history found for this employee.
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

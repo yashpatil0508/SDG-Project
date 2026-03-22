@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="animate-fade-in">
+    <h1 style="margin-bottom: 2rem; font-size: 2rem;">Overview</h1>
+
+    <div class="stats-grid">
+        <div class="stat-card glass-panel">
+            <h3>Total Employees</h3>
+            <div class="value">{{ total_employees }}</div>
+        </div>
+        <div class="stat-card glass-panel">
+            <h3>Departments</h3>
+            <div class="value">{{ total_departments }}</div>
+        </div>
+        <div class="stat-card glass-panel">
+            <h3>Avg Performance</h3>
+            <div class="value" style="color: var(--secondary-color);">3.8</div>
+        </div>
+        <div class="stat-card glass-panel">
+            <h3>Active Rate</h3>
+            <div class="value" style="color: var(--accent-color)">90%</div>
+        </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem;">
+        <div class="glass-panel" style="padding: 1.5rem;">
+            <h2 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Recent Hires</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Department</th>
+                            <th>Join Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for emp in recent_joins %}
+                        <tr>
+                            <td>
+                                <a href="{{ url_for('employee_detail', id=emp.id) }}" style="color: white; text-decoration: none; font-weight: 500;">
+                                    {{ emp.first_name }} {{ emp.last_name }}
+                                </a>
+                            </td>
+                            <td><span class="badge {{ emp.role|lower }}">{{ emp.role }}</span></td>
+                            <td>{{ emp.department.name }}</td>
+                            <td>{{ emp.join_date.strftime('%b %d, %Y') }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div style="margin-top: 1rem; text-align: right;">
+                <a href="{{ url_for('employees', sort='recent') }}" class="btn btn-secondary">View All <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="glass-panel" style="padding: 1.5rem;">
+            <h2 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Departments</h2>
+            <ul style="list-style: none;">
+                {% for dept in dept_stats %}
+                <li style="display: flex; justify-content: space-between; padding: 0.75rem 0; border-bottom: 1px solid var(--glass-border);">
+                    <span>{{ dept.name }}</span>
+                    <span style="font-weight: 600;">{{ dept.count }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

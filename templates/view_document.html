@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center animate-fade-in">
+    <div class="col-lg-10">
+        <div class="d-flex justify-content-between align-items-center mb-4 mt-3">
+            <h2 class="fw-bold"><i class="bi bi-file-earmark-text text-primary me-2"></i>Document Details</h2>
+            <div class="d-flex gap-2">
+                <a href="{{ url_for('search') }}" class="btn btn-outline-secondary rounded-pill shadow-sm">
+                    <i class="bi bi-arrow-left me-2"></i>Back to Archive
+                </a>
+            </div>
+        </div>
+
+        <div class="card glass-panel border-0 shadow-lg">
+            <div class="card-body p-0">
+                <div class="row g-0">
+                    <div class="col-md-5 border-end border-secondary bg-dark" style="border-top-left-radius: 16px; border-bottom-left-radius: 16px;">
+                        <div class="p-4 p-md-5 h-100 d-flex flex-column justify-content-center align-items-center text-center">
+                            <!-- Extension visualization icon -->
+                            {% set ext = doc.file_path.split('.')[-1]|lower %}
+                            {% if ext == 'pdf' %}
+                                <i class="bi bi-file-earmark-pdf text-danger" style="font-size: 8rem;"></i>
+                            {% elif ext in ['doc', 'docx'] %}
+                                <i class="bi bi-file-earmark-word text-primary" style="font-size: 8rem;"></i>
+                            {% elif ext in ['xls', 'xlsx'] %}
+                                <i class="bi bi-file-earmark-excel text-success" style="font-size: 8rem;"></i>
+                            {% elif ext in ['png', 'jpg', 'jpeg'] %}
+                                <i class="bi bi-file-earmark-image text-info" style="font-size: 8rem;"></i>
+                            {% else %}
+                                <i class="bi bi-file-earmark-text text-secondary" style="font-size: 8rem;"></i>
+                            {% endif %}
+                            
+                            <h4 class="mt-4 mb-3">{{ doc.title }}</h4>
+                            <p class="text-muted small mb-4">Uploaded on {{ doc.upload_date.strftime('%Y-%m-%d') }}</p>
+                            
+                            <a href="{{ url_for('download_document', id=doc.id) }}" class="btn btn-success btn-lg rounded-pill shadow w-100">
+                                <i class="bi bi-cloud-download me-2"></i>Download File ({{ ext|upper }})
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-7">
+                        <div class="p-4 p-md-5">
+                            <h4 class="mb-4 border-bottom border-secondary pb-3">Metadata</h4>
+                            
+                            <table class="table table-borderless table-dark align-middle">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="text-secondary ps-0 w-25">ID</th>
+                                        <td class="fw-bold">#{{ doc.id }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-secondary ps-0">Department</th>
+                                        <td><span class="badge bg-secondary">{{ doc.department.name if doc.department else 'N/A' }}</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-secondary ps-0">Category</th>
+                                        <td>{{ doc.category }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-secondary ps-0">Year</th>
+                                        <td>{{ doc.year }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-secondary ps-0">Upload Date</th>
+                                        <td>{{ doc.upload_date.strftime('%B %d, %Y at %I:%M %p') }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-secondary ps-0 align-top">Keywords</th>
+                                        <td>
+                                            {% if doc.keywords %}
+                                                {% for keyword in doc.keywords.split(',') %}
+                                                    <span class="badge rounded-pill border border-secondary text-light mb-1 me-1">{{ keyword.strip() }}</span>
+                                                {% endfor %}
+                                            {% else %}
+                                                <span class="text-muted fst-italic">None</span>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <!-- Document Access Log (Manager/Admin preview) -->
+                            {% if current_user.role in ['admin', 'manager'] %}
+                            <div class="mt-5 border-top border-secondary pt-4">
+                                <h5 class="mb-3 d-flex align-items-center">
+                                    <i class="bi bi-clock-history text-warning me-2"></i>Recent Access Activity
+                                </h5>
+                                {% if logs %}
+                                    <ul class="list-group list-group-flush bg-transparent">
+                                        {% for log in logs[:3] %}
+                                        <li class="list-group-item bg-transparent text-light border-secondary px-0 py-2 d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <small class="fw-bold">{{ log.user.name }}</small>
+                                                <span class="badge bg-dark border border-secondary ms-2 text-{{ 'primary' if log.action == 'view' else 'success' }}">{{ log.action|capitalize }}</span>
+                                            </div>
+                                            <small class="text-muted">{{ log.timestamp.strftime('%Y-%m-%d %H:%M') }}</small>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% else %}
+                                    <p class="text-muted small">No recent activity recorded for this document.</p>
+                                {% endif %}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,251 @@
+Employee_ID,First_Name,Last_Name,Email,Role,Department,Salary,Join_Date,Performance_Score,Status
+EMP1000,Mark,Anderson,mark.anderson72@company.com,Employee,Finance,61284,2025-09-16,3.6,Active
+EMP1001,David,Hernandez,david.hernandez88@company.com,Employee,Finance,94131,2023-08-11,4.3,Active
+EMP1002,Mary,White,mary.white30@company.com,Employee,Customer Support,52433,2024-07-20,5.0,Active
+EMP1003,Barbara,Perez,barbara.perez89@company.com,Employee,Engineering,91434,2024-03-09,3.5,On Leave
+EMP1004,Jessica,Anderson,jessica.anderson62@company.com,Employee,Customer Support,69118,2023-11-05,3.0,Active
+EMP1005,John,Miller,john.miller21@company.com,Employee,Engineering,64502,2024-10-10,4.9,Active
+EMP1006,Susan,Rodriguez,susan.rodriguez90@company.com,Employee,Finance,73483,2025-04-09,4.0,Active
+EMP1007,Wei,Wilson,wei.wilson81@company.com,Employee,Marketing,51585,2025-02-01,3.3,Active
+EMP1008,Patricia,Lewis,patricia.lewis63@company.com,Employee,Human Resources,56873,2025-07-19,4.8,Active
+EMP1009,Li,Wilson,li.wilson95@company.com,Employee,Legal,61534,2022-06-21,3.9,Active
+EMP1010,Christopher,Thomas,christopher.thomas82@company.com,Employee,Product Management,59268,2023-05-23,3.4,Active
+EMP1011,Mark,Anderson,mark.anderson45@company.com,Employee,Engineering,98984,2022-08-25,4.4,Active
+EMP1012,Lisa,Hernandez,lisa.hernandez81@company.com,Employee,Legal,63986,2022-05-15,4.4,Active
+EMP1013,Margaret,Miller,margaret.miller73@company.com,Employee,Legal,63067,2023-10-08,2.7,Active
+EMP1014,Lisa,Perez,lisa.perez91@company.com,Employee,Sales,55056,2026-01-18,2.8,Active
+EMP1015,John,Smith,john.smith5@company.com,Employee,Human Resources,83270,2023-04-28,3.1,Active
+EMP1016,William,Anderson,william.anderson15@company.com,Employee,Human Resources,73419,2025-04-15,3.0,Terminated
+EMP1017,Priya,Brown,priya.brown94@company.com,Employee,Finance,90342,2021-11-08,3.5,Active
+EMP1018,Mark,Gonzalez,mark.gonzalez32@company.com,Employee,Product Management,59914,2024-09-09,2.9,Active
+EMP1019,Jennifer,Ramirez,jennifer.ramirez28@company.com,Employee,Marketing,53627,2024-12-15,4.7,Active
+EMP1020,Margaret,Harris,margaret.harris62@company.com,Employee,Engineering,80080,2025-01-21,4.1,Active
+EMP1021,John,Garcia,john.garcia72@company.com,Employee,Sales,79320,2022-02-03,3.1,Active
+EMP1022,Lisa,Anderson,lisa.anderson59@company.com,Employee,Customer Support,80303,2025-04-26,4.3,Active
+EMP1023,Barbara,Johnson,barbara.johnson3@company.com,Employee,Engineering,51636,2025-09-26,5.0,Active
+EMP1024,Mary,Johnson,mary.johnson92@company.com,Employee,Customer Support,50854,2026-01-15,4.8,Active
+EMP1025,Mary,Sanchez,mary.sanchez32@company.com,Employee,Customer Support,71919,2021-11-24,4.2,Active
+EMP1026,Thomas,White,thomas.white69@company.com,Employee,Marketing,90545,2021-10-06,3.5,Active
+EMP1027,Raj,Rodriguez,raj.rodriguez59@company.com,Employee,Customer Support,65708,2026-02-19,4.0,Active
+EMP1028,Li,Jackson,li.jackson90@company.com,Employee,Sales,80206,2021-08-16,3.4,Active
+EMP1029,Raj,Moore,raj.moore1@company.com,Employee,Sales,58155,2022-07-08,3.0,Active
+EMP1030,Sandra,Miller,sandra.miller16@company.com,Employee,Human Resources,75199,2024-01-03,3.8,Active
+EMP1031,James,Lopez,james.lopez69@company.com,Employee,Finance,79855,2024-01-01,3.3,Terminated
+EMP1032,Charles,Thomas,charles.thomas3@company.com,Employee,Marketing,56295,2021-05-15,4.4,Active
+EMP1033,David,Davis,david.davis36@company.com,Employee,Customer Support,98354,2024-05-01,2.8,Terminated
+EMP1034,Matthew,Lewis,matthew.lewis18@company.com,Employee,Legal,71357,2022-02-23,3.7,Active
+EMP1035,Jessica,Chen,jessica.chen68@company.com,Employee,Engineering,75876,2023-06-16,4.4,Active
+EMP1036,Michael,Williams,michael.williams17@company.com,Employee,Legal,94064,2023-02-08,2.7,Active
+EMP1037,Nancy,Robinson,nancy.robinson38@company.com,Employee,Customer Support,53436,2022-10-06,4.7,Active
+EMP1038,Anthony,Wang,anthony.wang21@company.com,Employee,Customer Support,82352,2021-12-31,4.2,Terminated
+EMP1039,Robert,Jackson,robert.jackson4@company.com,Employee,Sales,94080,2025-06-05,2.9,On Leave
+EMP1040,Sandra,Lewis,sandra.lewis46@company.com,Employee,Finance,93525,2021-06-29,4.4,Active
+EMP1041,Lisa,Lewis,lisa.lewis46@company.com,Employee,Finance,99758,2024-04-18,5.0,Active
+EMP1042,Christopher,Sharma,christopher.sharma87@company.com,Employee,Engineering,69778,2021-07-28,3.4,On Leave
+EMP1043,John,White,john.white32@company.com,Employee,Product Management,61093,2025-11-03,2.9,Active
+EMP1044,Mary,Sanchez,mary.sanchez17@company.com,Employee,Legal,90864,2025-02-06,4.3,Active
+EMP1045,Mark,Sanchez,mark.sanchez50@company.com,Employee,Engineering,60647,2022-08-29,2.7,Active
+EMP1046,Li,Martin,li.martin65@company.com,Employee,Legal,56655,2022-04-26,2.6,Active
+EMP1047,Joseph,Ramirez,joseph.ramirez98@company.com,Employee,Human Resources,60966,2023-07-24,3.3,Active
+EMP1048,Nancy,Perez,nancy.perez49@company.com,Employee,Marketing,54777,2023-07-08,3.3,Active
+EMP1049,Carlos,Chen,carlos.chen8@company.com,Employee,Finance,53051,2025-09-21,4.1,Active
+EMP1050,Jennifer,Sharma,jennifer.sharma94@company.com,Employee,Product Management,65202,2023-06-23,2.8,Active
+EMP1051,Richard,Robinson,richard.robinson19@company.com,Employee,Engineering,58311,2023-07-01,3.6,Active
+EMP1052,Betty,Sanchez,betty.sanchez62@company.com,Employee,Product Management,51150,2025-02-06,4.2,Active
+EMP1053,James,Wang,james.wang96@company.com,Employee,Customer Support,55237,2022-10-03,3.0,Active
+EMP1054,Jessica,Jones,jessica.jones22@company.com,Employee,Finance,58130,2024-03-26,3.9,Active
+EMP1055,Carlos,Perez,carlos.perez57@company.com,Employee,Finance,59435,2024-03-19,2.7,On Leave
+EMP1056,Robert,Lopez,robert.lopez16@company.com,Employee,Human Resources,85247,2022-02-26,3.7,Active
+EMP1057,Sandra,Thompson,sandra.thompson10@company.com,Employee,Customer Support,82580,2024-04-19,2.6,On Leave
+EMP1058,Elizabeth,Jackson,elizabeth.jackson58@company.com,Employee,Legal,91975,2024-11-30,4.2,Active
+EMP1059,Lisa,Thomas,lisa.thomas2@company.com,Employee,Engineering,99115,2023-09-04,4.1,Active
+EMP1060,Lisa,Lopez,lisa.lopez50@company.com,Employee,Sales,85195,2025-07-08,3.6,Active
+EMP1061,Carlos,Lopez,carlos.lopez67@company.com,Employee,Engineering,88304,2024-06-26,4.8,Active
+EMP1062,Mark,Gonzalez,mark.gonzalez12@company.com,Employee,Product Management,53373,2024-09-19,2.7,Active
+EMP1063,Daniel,Taylor,daniel.taylor90@company.com,Employee,Legal,73132,2023-11-17,2.6,Active
+EMP1064,Michael,Brown,michael.brown58@company.com,Employee,Finance,88513,2025-05-17,4.8,Active
+EMP1065,Matthew,Lee,matthew.lee36@company.com,Employee,Human Resources,88756,2022-06-22,3.9,Terminated
+EMP1066,Wei,Moore,wei.moore96@company.com,Employee,Legal,73190,2024-07-18,3.9,Active
+EMP1067,Richard,Thompson,richard.thompson89@company.com,Employee,Sales,71352,2026-03-18,4.8,Active
+EMP1068,Karen,Harris,karen.harris86@company.com,Employee,Finance,50698,2024-01-29,3.5,Active
+EMP1069,Charles,Lopez,charles.lopez9@company.com,Employee,Product Management,67101,2023-03-27,4.9,Active
+EMP1070,Jessica,Jones,jessica.jones12@company.com,Employee,Engineering,81667,2023-08-30,3.0,Active
+EMP1071,Daniel,Thomas,daniel.thomas57@company.com,Employee,Product Management,68540,2025-12-03,3.7,Active
+EMP1072,Susan,Patel,susan.patel5@company.com,Employee,Sales,88102,2023-03-25,3.4,Active
+EMP1073,Barbara,Rodriguez,barbara.rodriguez74@company.com,Employee,Human Resources,85307,2023-09-21,2.8,Active
+EMP1074,Richard,Rodriguez,richard.rodriguez50@company.com,Employee,Sales,69065,2024-07-22,2.7,Active
+EMP1075,Maria,Jackson,maria.jackson8@company.com,Employee,Legal,92348,2024-12-17,4.5,Active
+EMP1076,Matthew,Brown,matthew.brown36@company.com,Employee,Customer Support,73803,2025-02-28,3.7,Active
+EMP1077,Anthony,Martinez,anthony.martinez90@company.com,Employee,Sales,78710,2024-05-15,3.7,Active
+EMP1078,Margaret,Martin,margaret.martin92@company.com,Employee,Legal,63116,2023-09-03,4.1,Active
+EMP1079,John,Gonzalez,john.gonzalez92@company.com,Employee,Customer Support,50504,2024-07-19,3.7,Active
+EMP1080,Raj,Garcia,raj.garcia58@company.com,Employee,Marketing,95740,2023-01-23,3.9,Active
+EMP1081,Christopher,Thomas,christopher.thomas85@company.com,Employee,Sales,61003,2024-08-26,3.1,Active
+EMP1082,Karen,Moore,karen.moore47@company.com,Employee,Engineering,88413,2024-06-01,3.6,Active
+EMP1083,John,Thomas,john.thomas87@company.com,Employee,Engineering,57114,2024-01-22,4.9,Active
+EMP1084,Linda,Lopez,linda.lopez24@company.com,Employee,Marketing,79703,2024-05-11,3.0,Active
+EMP1085,Linda,Ramirez,linda.ramirez92@company.com,Employee,Finance,54835,2025-12-14,3.6,Active
+EMP1086,Thomas,Rodriguez,thomas.rodriguez33@company.com,Employee,Finance,85547,2023-04-13,2.9,Active
+EMP1087,Wei,Garcia,wei.garcia82@company.com,Employee,Sales,99407,2023-03-01,4.0,Active
+EMP1088,Elizabeth,Robinson,elizabeth.robinson5@company.com,Employee,Product Management,51015,2026-03-21,4.4,Active
+EMP1089,Priya,Hernandez,priya.hernandez85@company.com,Employee,Human Resources,54158,2024-08-14,4.9,Active
+EMP1090,Richard,Chen,richard.chen98@company.com,Employee,Engineering,90034,2022-08-15,3.2,Active
+EMP1091,Jennifer,Ramirez,jennifer.ramirez81@company.com,Employee,Finance,82606,2025-10-16,5.0,Active
+EMP1092,Daniel,Martinez,daniel.martinez74@company.com,Employee,Sales,63456,2024-04-04,3.6,Active
+EMP1093,Richard,Brown,richard.brown62@company.com,Employee,Engineering,87744,2022-07-23,4.0,On Leave
+EMP1094,Yash,Davis,yash.davis39@company.com,Employee,Human Resources,99401,2023-01-25,3.7,Active
+EMP1095,Barbara,Smith,barbara.smith54@company.com,Employee,Marketing,91348,2023-12-07,4.7,Active
+EMP1096,Thomas,Thompson,thomas.thompson79@company.com,Employee,Finance,89764,2022-10-21,4.5,Active
+EMP1097,Anita,Wang,anita.wang82@company.com,Employee,Customer Support,75934,2023-07-29,2.7,Terminated
+EMP1098,Maria,Chen,maria.chen88@company.com,Employee,Product Management,54637,2023-04-20,3.8,Active
+EMP1099,Robert,Lewis,robert.lewis4@company.com,Employee,Human Resources,69856,2024-12-05,4.4,Active
+EMP1100,Lisa,Jones,lisa.jones34@company.com,Employee,Customer Support,64388,2025-04-04,3.3,Active
+EMP1101,David,Thompson,david.thompson55@company.com,Employee,Legal,56238,2025-01-18,4.2,Active
+EMP1102,Patricia,Harris,patricia.harris67@company.com,Manager,Legal,126034,2023-01-18,4.2,Active
+EMP1103,Charles,Lee,charles.lee5@company.com,Employee,Human Resources,95659,2023-02-02,2.9,Active
+EMP1104,Jennifer,Smith,jennifer.smith5@company.com,Employee,Engineering,66907,2022-03-03,4.7,Active
+EMP1105,Susan,Sanchez,susan.sanchez45@company.com,Employee,Sales,73624,2023-05-25,4.5,Active
+EMP1106,Sandra,Taylor,sandra.taylor26@company.com,Employee,Marketing,63568,2021-03-30,4.4,Active
+EMP1107,Joseph,Perez,joseph.perez14@company.com,Employee,Human Resources,78699,2021-06-08,3.7,Active
+EMP1108,Susan,Miller,susan.miller3@company.com,Employee,Product Management,67302,2023-04-11,4.4,Active
+EMP1109,Maria,Anderson,maria.anderson64@company.com,Employee,Engineering,88518,2022-07-20,3.0,Active
+EMP1110,Thomas,Perez,thomas.perez90@company.com,Employee,Customer Support,97915,2022-09-10,4.7,Active
+EMP1111,Matthew,Brown,matthew.brown10@company.com,Employee,Sales,66616,2021-07-09,3.7,Terminated
+EMP1112,Nancy,Wang,nancy.wang8@company.com,Employee,Legal,65728,2023-04-09,2.8,Active
+EMP1113,Carlos,Garcia,carlos.garcia52@company.com,Employee,Human Resources,98447,2026-01-17,3.1,Active
+EMP1114,Jennifer,Chen,jennifer.chen53@company.com,Employee,Customer Support,76900,2025-12-20,3.4,Active
+EMP1115,Sandra,Hernandez,sandra.hernandez62@company.com,Employee,Customer Support,60589,2025-09-08,2.6,Active
+EMP1116,John,Patel,john.patel40@company.com,Employee,Finance,60787,2023-09-28,2.8,Active
+EMP1117,Karen,Ramirez,karen.ramirez75@company.com,Employee,Marketing,72350,2022-12-28,4.9,On Leave
+EMP1118,Maria,Johnson,maria.johnson79@company.com,Employee,Sales,63703,2024-02-05,3.2,Active
+EMP1119,Robert,Garcia,robert.garcia26@company.com,Employee,Customer Support,76386,2023-03-16,3.8,Active
+EMP1120,James,Sanchez,james.sanchez14@company.com,Employee,Legal,92533,2021-08-08,4.8,Active
+EMP1121,John,Chen,john.chen6@company.com,Employee,Human Resources,50009,2021-12-08,2.7,Active
+EMP1122,Mary,Gonzalez,mary.gonzalez40@company.com,Employee,Human Resources,84387,2022-02-06,2.8,Active
+EMP1123,Thomas,Rodriguez,thomas.rodriguez75@company.com,Employee,Product Management,64231,2025-07-13,3.5,On Leave
+EMP1124,Yash,Jones,yash.jones62@company.com,Employee,Marketing,50235,2022-02-19,4.8,Active
+EMP1125,William,Wang,william.wang76@company.com,Employee,Sales,55415,2024-11-25,3.9,Active
+EMP1126,Mark,Davis,mark.davis11@company.com,Employee,Engineering,80523,2023-05-29,4.6,Active
+EMP1127,Robert,Jackson,robert.jackson78@company.com,Employee,Human Resources,70611,2022-11-13,4.7,Active
+EMP1128,Sarah,Davis,sarah.davis39@company.com,Employee,Legal,78173,2023-05-31,3.7,Active
+EMP1129,Raj,Thompson,raj.thompson63@company.com,Employee,Product Management,59184,2023-01-16,3.4,Active
+EMP1130,Susan,Garcia,susan.garcia6@company.com,Employee,Sales,81110,2024-07-07,3.3,Active
+EMP1131,Joseph,Lewis,joseph.lewis33@company.com,Employee,Marketing,75053,2024-08-28,3.9,Active
+EMP1132,Maria,Chen,maria.chen27@company.com,Employee,Product Management,52336,2024-09-20,3.0,Active
+EMP1133,Elizabeth,Jones,elizabeth.jones74@company.com,Employee,Engineering,96197,2023-06-06,3.8,Active
+EMP1134,Li,White,li.white52@company.com,Employee,Legal,85996,2025-10-19,2.9,Active
+EMP1135,Patricia,Lopez,patricia.lopez45@company.com,Employee,Human Resources,98538,2021-06-25,4.0,Active
+EMP1136,Li,Sanchez,li.sanchez43@company.com,Employee,Sales,84884,2025-10-31,3.0,Active
+EMP1137,Maria,Garcia,maria.garcia72@company.com,Employee,Product Management,50814,2022-03-03,4.9,Active
+EMP1138,Betty,Gonzalez,betty.gonzalez62@company.com,Employee,Human Resources,67368,2023-12-10,2.5,Active
+EMP1139,Barbara,Brown,barbara.brown5@company.com,Employee,Legal,88727,2021-07-27,2.9,On Leave
+EMP1140,Yash,Rodriguez,yash.rodriguez51@company.com,Employee,Finance,94327,2024-11-02,4.8,Active
+EMP1141,James,Lee,james.lee90@company.com,Employee,Customer Support,97523,2024-07-10,4.6,Active
+EMP1142,Joseph,Lee,joseph.lee47@company.com,Employee,Engineering,59524,2024-05-26,3.0,Active
+EMP1143,Betty,Harris,betty.harris90@company.com,Employee,Sales,57973,2022-04-12,3.7,On Leave
+EMP1144,Anita,Clark,anita.clark17@company.com,Employee,Legal,95994,2023-11-02,3.6,Active
+EMP1145,Lisa,Harris,lisa.harris71@company.com,Employee,Marketing,95765,2025-05-25,4.8,Active
+EMP1146,Mark,Perez,mark.perez26@company.com,Employee,Marketing,66241,2025-04-23,3.8,Active
+EMP1147,Karen,Martin,karen.martin86@company.com,Employee,Marketing,71566,2025-12-11,3.0,Active
+EMP1148,James,Sharma,james.sharma13@company.com,Employee,Customer Support,76838,2022-05-31,3.0,Active
+EMP1149,Priya,Robinson,priya.robinson29@company.com,Employee,Engineering,70908,2025-05-01,3.7,Active
+EMP1150,Charles,Moore,charles.moore1@company.com,Employee,Customer Support,88258,2024-07-03,3.8,On Leave
+EMP1151,Sandra,Brown,sandra.brown1@company.com,Employee,Legal,62342,2025-10-14,3.4,Active
+EMP1152,Charles,Wang,charles.wang97@company.com,Employee,Product Management,66438,2025-04-30,4.6,Active
+EMP1153,Mark,Davis,mark.davis65@company.com,Employee,Engineering,60998,2022-06-08,3.8,Active
+EMP1154,Carlos,Williams,carlos.williams51@company.com,Employee,Engineering,70059,2023-12-24,4.3,Active
+EMP1155,Priya,White,priya.white78@company.com,Employee,Legal,97917,2022-07-26,4.9,Active
+EMP1156,Christopher,Wilson,christopher.wilson95@company.com,Employee,Product Management,67327,2021-03-29,4.1,Active
+EMP1157,Daniel,Lee,daniel.lee19@company.com,Employee,Legal,86220,2023-09-23,4.0,Active
+EMP1158,Sarah,Johnson,sarah.johnson1@company.com,Employee,Product Management,73236,2025-06-16,3.1,Active
+EMP1159,John,Thompson,john.thompson12@company.com,Employee,Marketing,64596,2023-06-05,3.5,On Leave
+EMP1160,William,Wang,william.wang53@company.com,Employee,Marketing,93861,2025-01-08,2.9,Active
+EMP1161,Sandra,Thompson,sandra.thompson96@company.com,Employee,Engineering,78529,2024-05-04,3.8,Active
+EMP1162,Mary,Harris,mary.harris73@company.com,Employee,Customer Support,67685,2024-09-01,3.6,Active
+EMP1163,Mark,Wang,mark.wang87@company.com,Employee,Finance,66458,2023-07-08,4.8,Active
+EMP1164,Li,Wang,li.wang17@company.com,Employee,Finance,81896,2023-12-15,4.6,Active
+EMP1165,Nancy,Lee,nancy.lee27@company.com,Employee,Engineering,65646,2022-12-28,4.3,Terminated
+EMP1166,Barbara,Miller,barbara.miller10@company.com,Employee,Finance,61664,2023-09-30,3.5,Active
+EMP1167,Mary,Smith,mary.smith51@company.com,Employee,Finance,61555,2025-01-15,3.1,Active
+EMP1168,David,Hernandez,david.hernandez36@company.com,Employee,Engineering,74762,2023-06-07,4.0,Active
+EMP1169,Anita,White,anita.white22@company.com,Employee,Finance,73863,2024-10-25,3.2,Active
+EMP1170,Charles,Taylor,charles.taylor62@company.com,Employee,Sales,95420,2022-07-17,4.1,Active
+EMP1171,William,Rodriguez,william.rodriguez40@company.com,Employee,Engineering,84008,2021-05-22,4.2,Active
+EMP1172,Matthew,Williams,matthew.williams44@company.com,Employee,Sales,69933,2021-07-02,4.0,Active
+EMP1173,Carlos,Taylor,carlos.taylor74@company.com,Employee,Engineering,78470,2025-05-21,3.0,Active
+EMP1174,Jessica,White,jessica.white83@company.com,Employee,Legal,62254,2023-01-12,4.4,Active
+EMP1175,Jennifer,Davis,jennifer.davis25@company.com,Employee,Human Resources,61918,2025-08-03,5.0,Active
+EMP1176,Priya,Martinez,priya.martinez16@company.com,Employee,Product Management,91360,2026-03-14,3.9,Active
+EMP1177,Susan,Anderson,susan.anderson7@company.com,Employee,Engineering,61122,2023-02-08,2.8,Active
+EMP1178,Daniel,Lewis,daniel.lewis82@company.com,Employee,Product Management,75510,2023-12-12,3.3,Active
+EMP1179,Susan,Patel,susan.patel24@company.com,Employee,Sales,85435,2021-09-26,3.7,Active
+EMP1180,Carlos,Sanchez,carlos.sanchez55@company.com,Employee,Product Management,62651,2021-04-30,3.3,Active
+EMP1181,Mark,Perez,mark.perez25@company.com,Employee,Finance,77345,2024-06-19,4.7,Active
+EMP1182,Mary,Wang,mary.wang30@company.com,Employee,Sales,79430,2026-03-01,3.8,Active
+EMP1183,Priya,Lewis,priya.lewis62@company.com,Employee,Engineering,58436,2023-04-09,4.1,Active
+EMP1184,Elizabeth,Robinson,elizabeth.robinson25@company.com,Employee,Product Management,53430,2022-02-25,4.3,On Leave
+EMP1185,John,Wilson,john.wilson30@company.com,Employee,Human Resources,82913,2022-01-09,2.6,Active
+EMP1186,Joseph,Rodriguez,joseph.rodriguez15@company.com,Employee,Engineering,73895,2023-11-11,3.0,Active
+EMP1187,Carlos,Garcia,carlos.garcia39@company.com,Employee,Legal,90970,2024-03-12,4.0,Active
+EMP1188,Michael,Brown,michael.brown59@company.com,Employee,Legal,98988,2025-08-07,3.1,Active
+EMP1189,Anita,Sanchez,anita.sanchez41@company.com,Employee,Engineering,93513,2021-12-06,4.6,Active
+EMP1190,Robert,Thompson,robert.thompson49@company.com,Employee,Engineering,61362,2024-01-30,5.0,Active
+EMP1191,Wei,Moore,wei.moore62@company.com,Employee,Engineering,97319,2021-03-25,4.5,Active
+EMP1192,Matthew,Rodriguez,matthew.rodriguez68@company.com,Employee,Customer Support,67764,2025-09-11,3.6,Active
+EMP1193,John,Ramirez,john.ramirez29@company.com,Employee,Engineering,67602,2023-09-29,4.6,Active
+EMP1194,William,Anderson,william.anderson40@company.com,Employee,Engineering,65585,2023-12-01,3.1,Active
+EMP1195,Linda,Jones,linda.jones48@company.com,Employee,Human Resources,91873,2022-06-19,4.9,Active
+EMP1196,Richard,Ramirez,richard.ramirez69@company.com,Employee,Finance,95648,2024-05-03,3.7,Terminated
+EMP1197,Mark,Williams,mark.williams56@company.com,Employee,Legal,80561,2021-05-01,3.9,Active
+EMP1198,Jennifer,White,jennifer.white19@company.com,Employee,Legal,69623,2021-06-22,4.6,Active
+EMP1199,Richard,Harris,richard.harris53@company.com,Employee,Human Resources,70670,2025-11-07,4.4,Active
+EMP1200,Robert,Patel,robert.patel23@company.com,Employee,Human Resources,90329,2023-01-23,3.3,Active
+EMP1201,Yash,Moore,yash.moore2@company.com,Employee,Customer Support,76588,2025-06-17,2.5,Terminated
+EMP1202,Richard,Clark,richard.clark17@company.com,Employee,Legal,81966,2023-08-05,4.1,Active
+EMP1203,Wei,Garcia,wei.garcia83@company.com,Employee,Customer Support,94486,2022-10-29,3.6,Terminated
+EMP1204,Margaret,Anderson,margaret.anderson94@company.com,Employee,Finance,55084,2021-12-25,4.8,Terminated
+EMP1205,Li,Brown,li.brown91@company.com,Employee,Legal,64859,2023-09-26,4.3,Active
+EMP1206,Nancy,Sanchez,nancy.sanchez82@company.com,Employee,Human Resources,73821,2023-02-24,4.2,Active
+EMP1207,Li,Lopez,li.lopez7@company.com,Employee,Finance,94064,2025-10-17,3.4,Active
+EMP1208,David,Thompson,david.thompson26@company.com,Employee,Human Resources,76029,2023-03-30,5.0,Active
+EMP1209,Wei,Gonzalez,wei.gonzalez39@company.com,Employee,Product Management,91846,2023-05-28,4.2,Active
+EMP1210,Mary,Wilson,mary.wilson84@company.com,Employee,Customer Support,61722,2025-07-02,4.7,Active
+EMP1211,Margaret,Lewis,margaret.lewis21@company.com,Employee,Product Management,66335,2023-08-08,4.1,Active
+EMP1212,Charles,Jones,charles.jones3@company.com,Employee,Sales,57424,2022-10-13,4.7,Active
+EMP1213,Anita,Harris,anita.harris24@company.com,Employee,Marketing,76385,2024-10-07,3.7,Active
+EMP1214,Linda,Harris,linda.harris17@company.com,Employee,Finance,53380,2022-08-24,4.4,Active
+EMP1215,Michael,Williams,michael.williams93@company.com,Employee,Legal,88827,2023-02-13,4.8,Active
+EMP1216,Karen,Anderson,karen.anderson25@company.com,Employee,Customer Support,61536,2024-09-02,3.1,Active
+EMP1217,Maria,Perez,maria.perez2@company.com,Employee,Legal,66967,2022-04-21,5.0,Active
+EMP1218,Linda,Lee,linda.lee18@company.com,Employee,Customer Support,80015,2022-02-23,3.7,On Leave
+EMP1219,Maria,Sharma,maria.sharma11@company.com,Employee,Finance,91688,2023-06-01,4.9,Active
+EMP1220,Linda,Hernandez,linda.hernandez86@company.com,Employee,Sales,96167,2025-07-16,3.1,Active
+EMP1221,Priya,Anderson,priya.anderson80@company.com,Employee,Customer Support,79781,2021-06-22,4.3,Active
+EMP1222,Priya,Chen,priya.chen2@company.com,Employee,Engineering,77424,2026-01-24,3.4,Active
+EMP1223,Richard,Sanchez,richard.sanchez22@company.com,Employee,Product Management,93201,2024-06-24,3.9,Active
+EMP1224,Joseph,Wang,joseph.wang44@company.com,Employee,Engineering,56090,2022-02-02,4.3,Active
+EMP1225,William,Garcia,william.garcia73@company.com,Employee,Product Management,76015,2022-09-26,4.3,Active
+EMP1226,Linda,Ramirez,linda.ramirez62@company.com,Employee,Marketing,63629,2021-07-11,4.5,Active
+EMP1227,David,Martin,david.martin80@company.com,Employee,Marketing,61653,2024-11-19,4.5,Active
+EMP1228,Susan,Hernandez,susan.hernandez82@company.com,Employee,Customer Support,57179,2021-06-17,4.1,Active
+EMP1229,Charles,Davis,charles.davis93@company.com,Employee,Product Management,52356,2023-02-15,2.6,Active
+EMP1230,Sarah,Garcia,sarah.garcia18@company.com,Employee,Sales,50661,2022-09-22,5.0,Active
+EMP1231,John,Ramirez,john.ramirez74@company.com,Employee,Sales,78706,2022-06-10,2.7,Active
+EMP1232,Joseph,Chen,joseph.chen7@company.com,Employee,Marketing,57005,2026-01-04,4.3,Active
+EMP1233,Lisa,Martin,lisa.martin37@company.com,Employee,Marketing,75963,2025-01-26,5.0,Active
+EMP1234,Priya,Wang,priya.wang66@company.com,Employee,Product Management,76017,2023-10-10,3.6,Active
+EMP1235,Barbara,Williams,barbara.williams18@company.com,Employee,Legal,69342,2026-01-16,2.8,Active
+EMP1236,Li,Robinson,li.robinson87@company.com,Employee,Human Resources,91899,2022-08-30,4.9,Active
+EMP1237,Robert,Wilson,robert.wilson89@company.com,Employee,Marketing,91089,2026-01-22,2.9,Active
+EMP1238,Margaret,Johnson,margaret.johnson35@company.com,Employee,Finance,93006,2025-04-03,4.4,Active
+EMP1239,Li,Thompson,li.thompson47@company.com,Employee,Product Management,94738,2022-12-12,2.9,Active
+EMP1240,Mark,Martinez,mark.martinez76@company.com,Employee,Customer Support,69816,2024-09-23,3.6,Active
+EMP1241,Barbara,Smith,barbara.smith57@company.com,Employee,Legal,56099,2024-10-20,2.6,Active
+EMP1242,Carlos,Lopez,carlos.lopez37@company.com,Employee,Engineering,86336,2025-10-03,4.5,Active
+EMP1243,Joseph,Garcia,joseph.garcia61@company.com,Employee,Marketing,70337,2022-02-19,2.6,Active
+EMP1244,Karen,Sanchez,karen.sanchez29@company.com,Employee,Engineering,89030,2024-02-14,3.6,Active
+EMP1245,Robert,Chen,robert.chen51@company.com,Employee,Customer Support,75611,2022-07-25,3.5,Active
+EMP1246,Anita,Harris,anita.harris50@company.com,Employee,Finance,65398,2024-08-20,3.1,Active
+EMP1247,Daniel,Martin,daniel.martin23@company.com,Employee,Legal,88525,2022-01-24,4.3,Active
+EMP1248,Christopher,Smith,christopher.smith8@company.com,Employee,Finance,90287,2025-01-02,4.7,Active
+EMP1249,Anita,Smith,anita.smith55@company.com,Employee,Product Management,65577,2022-05-23,4.2,Active
